@@ -11,7 +11,8 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.js('src-vue3/main.js', 'public/dist-vue3')
+mix.vue()
+mix.version()
+mix.browserSync('127.0.0.1:8000');
+// mix.setPublicPath('dist')
