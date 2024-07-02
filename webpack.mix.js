@@ -14,5 +14,6 @@ const mix = require('laravel-mix');
 mix.js('src-vue3/main.js', 'public/dist-vue3')
 mix.vue()
 mix.version()
-mix.browserSync('127.0.0.1:8000');
+mix.browserSync('127.0.0.1:8000')
+mix.disableNotifications()
 // mix.setPublicPath('dist')

@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    App hello9
+    App hello 10
 </template>
