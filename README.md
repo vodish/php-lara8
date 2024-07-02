@@ -1,1 +1,1 @@
-learning laravel8
+### laravel + vue3 + typescript
