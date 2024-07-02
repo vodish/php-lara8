@@ -11,8 +11,28 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('src-vue3/main.js', 'public/dist-vue3')
-mix.vue()
+mix.webpackConfig({
+    resolve: {
+        extensions: ['.vue', '.ts', '.js'],
+        alias: {
+            '@': __dirname + '/src-vue3',
+        }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.ts$/,
+                loader: 'ts-loader',
+                exclude: /node_module/,
+                options: { appendTsSuffixTo: [/\.vue$/] }
+            },
+        ],
+    },
+});
+
+// mix.js('src-vue3/main.js', 'public/dist-vue3')
+mix.ts("src-vue3/main.ts", "public/dist-vue3")
+mix.vue({ version: 3 })
 mix.version()
 mix.browserSync('127.0.0.1:8000')
 mix.disableNotifications()
