@@ -18474,7 +18474,7 @@ exports["default"] = (0, vue_2.defineComponent)({
   setup: function setup(__props, _a) {
     var __expose = _a.expose;
     __expose();
-    var test = (0, vue_3.ref)('test2');
+    var test = (0, vue_3.ref)('test5');
     var __returned__ = {
       test: test
     };
@@ -18502,7 +18502,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.render = render;
 var vue_2 = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return " App hello 13 " + (0, vue_2.toDisplayString)($setup.test);
+  return " App hello 14 " + (0, vue_2.toDisplayString)($setup.test);
 }
 
 /***/ }),
