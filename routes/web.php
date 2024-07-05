@@ -20,3 +20,9 @@ Route::get('/', function () {
 
 Route::get('/my', MyController::class);
 
+Route::middleware('mymw')->prefix('test')->group(function() {
+    Route::get('/', function() { return 'simple test'; });
+    Route::get('/one',  function() { return 'test one'; });
+});
+
+
