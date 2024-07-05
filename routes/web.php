@@ -25,4 +25,3 @@ Route::middleware('mymw')->prefix('test')->group(function() {
     Route::get('/one',  function() { return 'test one'; });
 });
 
-
