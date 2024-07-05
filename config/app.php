@@ -237,6 +237,7 @@ return [
         # мои фасады
         #
         'My' => App\Fasades\My::class,
+        'My2' => App\Fasades\My2::class,
     ],
 
 ];

@@ -13,3 +13,5 @@ class My extends Facade
         return 'my';
     }
 }
+
+
