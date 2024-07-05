@@ -2,6 +2,6 @@
 if (!function_exists('my')) {
     function my()
     {
-        // return app('my');
+        return app('my');
     }
 }

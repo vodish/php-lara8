@@ -174,6 +174,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        
+        # мои сервис-провайдеры
+        #
+        App\Providers\MyServiceProvaider::class,
 
     ],
 
@@ -230,6 +234,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        # мои фасады
+        #
+        'My' => App\Fasades\My::class,
     ],
 
 ];
