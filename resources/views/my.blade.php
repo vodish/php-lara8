@@ -10,10 +10,12 @@
 
 <body>
     <?= 'php code' ?>
-    
+
     @foreach ([2, 2, 2, 2, 2] as $k => $v)
         <p>{{ $k }}: {!! $v !!}</p>
     @endforeach
+
+    <x-alert> {{ __('алерт компонент3') }} </x-alert>
 
 </body>
 
