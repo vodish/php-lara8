@@ -13,9 +13,8 @@
 </head>
 
 <body>
-    <div id="app"></div>
-    {{-- <script src="/dist-vue3/main.js"></script> --}}
-    <script src="{{ mix('/dist-vue3/main.js') }}"></script>
+    <div id="app">Главная</div>
+    {{-- <script src="{{ mix('/dist-vue3/main.js') }}"></script> --}}
 </body>
 
 </html>
