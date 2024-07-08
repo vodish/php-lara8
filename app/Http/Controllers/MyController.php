@@ -11,9 +11,10 @@ class MyController extends Controller
     function __invoke()
     {
         
-        // $user = User::query()->where('id', 111)->first();
+        // $user = User::query()->where('id', 111)->first()->toArray();
         // dd($user);
         
+        // dd();
         
 
         return 'MyController: ' . time();
