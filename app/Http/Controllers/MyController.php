@@ -2,15 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class MyController extends Controller
 {
-    function __invoke() {
-        return 'MyController: ' .time();
+    function __invoke()
+    {
+        
+        // $user = User::query()->where('id', 111)->first();
+        // dd($user);
+        
+        
+
+        return 'MyController: ' . time();
     }
 
-    function test() {
+    function test()
+    {
         return 'test';
     }
 }
