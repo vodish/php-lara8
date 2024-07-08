@@ -18,11 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/my', MyController::class);
+Route::get('/my', MyController::class)->name('my');
 
 Route::middleware('mymw')->prefix('test')->group(function() {
     Route::get('/', function() { return 'simple test'; });
     Route::get('/one',  function() { return 'test one'; });
 });
-
 

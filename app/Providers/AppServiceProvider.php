@@ -23,6 +23,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->share('year', date('Y'));
+
+        view()->composer('name*', function() {
+            view()->share('key', 'value');
+        });
+        
     }
 }
