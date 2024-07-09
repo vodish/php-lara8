@@ -11,6 +11,9 @@
 <body>
     <?= 'php code' ?>
 
+    <p><a href="{{ route('main') }}">Главная</a></p>
+
+
     @foreach ([2, 2, 2, 2, 2] as $k => $v)
         <p>{{ $k }}: {!! $v !!}</p>
     @endforeach

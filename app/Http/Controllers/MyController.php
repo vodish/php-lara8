@@ -17,7 +17,8 @@ class MyController extends Controller
         // dd();
         
 
-        return 'MyController: ' . time();
+        // return 'MyController: ' . time();
+        return view('my');
     }
 
     function test()
