@@ -17,6 +17,7 @@ class MyMiddleware
     public function handle(Request $request, Closure $next)
     {
         // info($request->url(), ['time' => time()]);
+        
 
         return $next($request);
     }
