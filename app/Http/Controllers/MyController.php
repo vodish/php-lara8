@@ -19,7 +19,6 @@ class MyController extends Controller
         // $token = $request->input('token');
         // $token = $request->bearerToken();
 
-        $this->unau;
         dd(Hash::make('sdvsdv')); 
         // Auth::attempt([], true);
         // Auth::login();
