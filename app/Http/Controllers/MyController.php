@@ -16,7 +16,8 @@ class MyController extends Controller
         // $token = $request->bearerToken();
         // dd(Hash::make('sdvsdv')); 
 
-        dump(Dbv::one("SELECT * FROM `users` WHERE `id` = &id", ['id'=>2])); 
+        // свой сервис запросов к бд
+        // dump(Dbv::one("SELECT * FROM `users` WHERE `id` = :id", ['id'=>2])); 
 
         // Auth::attempt([], true);
         // Auth::login();
