@@ -178,6 +178,7 @@ return [
         # мои сервис-провайдеры
         #
         App\Providers\MyServiceProvaider::class,
+        App\Providers\DbvServiceProvider::class,
 
     ],
 
@@ -237,6 +238,7 @@ return [
         # мои фасады
         #
         'My' => App\Fasades\My::class,
+        'Dbv' => App\Fasades\Dbv::class,
     ],
 
 ];

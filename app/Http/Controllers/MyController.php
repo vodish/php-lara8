@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Fasades\Dbv;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Request;
 
@@ -14,8 +14,10 @@ class MyController extends Controller
         // $token = $request->query('token');
         // $token = $request->input('token');
         // $token = $request->bearerToken();
+        // dd(Hash::make('sdvsdv')); 
 
-        dd(Hash::make('sdvsdv')); 
+        dump(Dbv::one("SELECT * FROM `users` WHERE `id` = &id", ['id'=>2])); 
+
         // Auth::attempt([], true);
         // Auth::login();
         // Auth::logout();
