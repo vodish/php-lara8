@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Fasades\Dbv;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Request;
 
@@ -15,9 +16,18 @@ class MyController extends Controller
         // $token = $request->input('token');
         // $token = $request->bearerToken();
         // dd(Hash::make('sdvsdv')); 
-
-        // свой сервис запросов к бд
-        // dump(Dbv::one("SELECT * FROM `users` WHERE `id` = :id", ['id'=>2])); 
+        
+        // dump(DB::select("
+        //     SELECT
+        //           `users`.`id`
+        //         , `users`.`email`
+        //     FROM
+        //         `users`
+        //     WHERE
+        //         `id` < :id
+        //     ",
+        //     ['id'=>10]
+        // )); 
 
         // Auth::attempt([], true);
         // Auth::login();
